@@ -1,6 +1,6 @@
 proxy:
   port: 8080
-  authentication: simple
+  authentication: social
   admin-groups: admins
   users:
   - name: jack
@@ -8,6 +8,10 @@ proxy:
     groups: admins
   - name: jeff
     password: password
+  social:
+    google:
+      app-id: 81901800067-1sgai4r40a3opihnn9r2n7o0gai6141h.apps.googleusercontent.com
+      app-secret: 6-UDqDby1i7Cjd-Xe3-gNtcK
   docker:
       internal-networking: true
   specs:
